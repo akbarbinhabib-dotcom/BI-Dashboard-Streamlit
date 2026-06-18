@@ -9,7 +9,7 @@ import streamlit as st
 st.set_page_config(page_title="Mock data generate & robut coloumns mapping", layout="centered")
 
 st.title("Mock Data Generation & Robust Column Mapping")
-st.write("Yeh Streamlit app aapko mock data generate karne aur client ke custom columns ko robustly map karne mein madad karega.")
+st.write("This Streamlit app will help you generate mock data and robustly map the client's custom columns.")
 
 
 # ==============================================================================
