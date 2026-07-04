@@ -9,7 +9,7 @@ import streamlit as st
 st.set_page_config(page_title="Mock data generate & robut coloumns mapping", layout="wide")
 
 st.title("Mock Data Generation & Robust Column Mapping")
-st.write("This Streamlit app will help you generate mock data and robustly map the client's custom columns.")
+st.write("This Streamlit app will help you generate mock data and robustly map custom columns.")
 
 
 # ==============================================================================
@@ -56,7 +56,7 @@ def mapped_col(df):
 # 4. DATA INGESTION & ROUTING (File Upload Control Panel)
 # ==============================================================================
 st.sidebar.header("Swift-Mart control panel")
-uploaded_file = st.sidebar.file_uploader("Client CSV Data File Upload karein", type=["csv"])
+uploaded_file = st.sidebar.file_uploader("CSV Data File Upload Here", type=["csv"])
 
 # Determining the active dataset state (Client uploaded data vs Fallback mock data)
 if uploaded_file is not None:
