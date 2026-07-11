@@ -45,9 +45,26 @@ def mapped_col(df):
     
     # Declaring the schema translation dictionary to align client database fields
     mapping = {
-        'unit_price' : 'Price',
-        'product_line' : "Category",
-        "total" : "Total_Revenue"
+    # Price
+    'unit_price': 'Price',
+    'price': 'Price',          # already-correct name — yehi wo bug tha
+    'amount': 'Price',
+    'price_each': 'Price',
+
+    # Quantity — yeh missing thi, isi liye Total Revenue $0 aa raha tha
+    'quantity': 'Quantity',
+    'qty': 'Quantity',
+    'units': 'Quantity',
+    'unit_qty': 'Quantity',
+
+    # Category
+    'product_line': 'Category',
+    'category': 'Category',    # already-correct name
+
+    # Total_Revenue
+    'total': 'Total_Revenue',
+    'total_revenue': 'Total_Revenue',  # already-correct name
+    'sales': 'Total_Revenue',
     }
     return mapped_df.rename(columns=mapping)
 
